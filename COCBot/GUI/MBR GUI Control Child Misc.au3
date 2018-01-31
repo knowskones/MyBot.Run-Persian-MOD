@@ -33,7 +33,6 @@ Func cmbProfile()
 	saveConfig()
 
 	SetLog("Profile " & $g_sProfileCurrentName & " loaded from " & $g_sProfileConfigPath, $COLOR_SUCCESS)
-	btnRecycle()
 EndFunc   ;==>cmbProfile
 
 Func btnAddConfirm()
