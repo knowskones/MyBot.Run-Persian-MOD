@@ -1,0 +1,46 @@
+2: D [2018-03-11 01:44:51.777] Created log file: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th10\Logs\2018-03-11_01.44.51.log
+2: D [2018-03-11 01:44:51.777] Android: Nox
+2: D [2018-03-11 01:44:51.778] Android Instance: nox
+2: D [2018-03-11 01:44:51.779] Android Version: 
+2: D [2018-03-11 01:44:51.779] Android Version API: 17
+2: D [2018-03-11 01:44:51.780] Android ADB Device: 127.0.0.1:62001
+2: D [2018-03-11 01:44:51.780] Android Program Path: 
+2: D [2018-03-11 01:44:51.781] Android Program FileVersionInfo: not available
+2: D [2018-03-11 01:44:51.781] Android ADB Path: 
+2: D [2018-03-11 01:44:51.781] Android VBoxManage Path: 
+2: D [2018-03-11 01:44:51.782] Android ADB Shared Folder: 
+2: D [2018-03-11 01:44:51.783] Full Command Line: 0
+2: D [2018-03-11 01:44:51.783] @AutoItExe: C:\Program Files (x86)\AutoIt3\AutoIt3.exe
+2: D [2018-03-11 01:44:51.784] @ScriptFullPath: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\MyBot.run.au3
+2: D [2018-03-11 01:44:51.784] @WorkingDir: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\lib
+2: D [2018-03-11 01:44:51.784] @AutoItPID: 8764
+2: D [2018-03-11 01:44:51.785] @OSArch: X64
+2: D [2018-03-11 01:44:51.785] @OSVersion: WIN_7
+2: D [2018-03-11 01:44:51.785] @OSBuild: 7601
+2: D [2018-03-11 01:44:51.786] @OSServicePack: Service Pack 1
+2: D [2018-03-11 01:44:51.786] Primary Display: 1600 x 900 - 32bit
+2: D [2018-03-11 01:44:51.774] SetupProfileFolder: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11
+2: D [2018-03-11 01:44:51.798] readConfig(), call number 3
+2: D [2018-03-11 01:44:51.808] Read Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\building.ini
+2: D [2018-03-11 01:44:51.821] Read Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\config.ini
+2: D [2018-03-11 01:44:51.959] applyConfig(), call number 2
+2: D [2018-03-11 01:44:51.960] Threading: Using 1 threads for parallelism
+2: D [2018-03-11 01:44:51.960] Threading: Using 1 threads shared across all bot instances
+2: D [2018-03-11 01:44:51.961] Disable MyBot Window Redraw: applyConfig
+2: D [2018-03-11 01:44:51.963] Bot title updated to: My Bot v7.4.4 - Persian MOD v2.4.4 - (nox)
+2: D [2018-03-11 01:44:52.350] Redraw MyBot Window: applyConfig
+2: D [2018-03-11 01:44:52.377] saveConfig(), call number 4
+2: D [2018-03-11 01:44:52.388] Save Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\building.ini
+2: D [2018-03-11 01:44:52.409] Save Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\config.ini
+2: L [2018-03-11 01:44:52.411] Nox (nox) unsupported Graphics Engine / Render Mode, using OpenGL/ADB screencap
+2: D [2018-03-11 01:44:52.413] Enable ADB screencap for Background Mode
+2: D [2018-03-11 01:44:52.705] SaveConfig(), time = 0.33 sec
+2: L [2018-03-11 01:44:52.869] Profile th11 loaded from C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\config.ini
+2: D [2018-03-11 01:45:01.769] saveConfig(), call number 5
+2: D [2018-03-11 01:45:01.780] Save Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\building.ini
+2: D [2018-03-11 01:45:01.800] Save Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\config.ini
+2: L [2018-03-11 01:45:01.802] Nox (nox) unsupported Graphics Engine / Render Mode, using OpenGL/ADB screencap
+2: D [2018-03-11 01:45:01.804] Enable ADB screencap for Background Mode
+2: D [2018-03-11 01:45:02.049] SaveConfig(), time = 0.28 sec
+2: D [2018-03-11 01:45:02.207] Aquire Mutex for Profile: th10
+2: D [2018-03-11 01:45:02.208] Release Mutex for Profile: th11

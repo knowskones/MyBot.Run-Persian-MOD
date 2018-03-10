@@ -1,0 +1,143 @@
+0: D [2018-03-11 01:39:54.172] Created log file: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\Logs\2018-03-11_01.39.54.log
+0: D [2018-03-11 01:39:54.172] Full Command Line: 0
+0: D [2018-03-11 01:39:54.173] @AutoItExe: C:\Program Files (x86)\AutoIt3\AutoIt3.exe
+0: D [2018-03-11 01:39:54.173] @ScriptFullPath: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\MyBot.run.au3
+0: D [2018-03-11 01:39:54.174] @WorkingDir: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones
+0: D [2018-03-11 01:39:54.174] @AutoItPID: 8764
+0: D [2018-03-11 01:39:54.174] @OSArch: X64
+0: D [2018-03-11 01:39:54.175] @OSVersion: WIN_7
+0: D [2018-03-11 01:39:54.175] @OSBuild: 7601
+0: D [2018-03-11 01:39:54.175] @OSServicePack: Service Pack 1
+0: D [2018-03-11 01:39:54.176] Primary Display: 1600 x 900 - 32bit
+0: D [2018-03-11 01:39:54.164] MyBot.run/API/1.1 Message ID = 49844
+0: D [2018-03-11 01:39:54.165] MyBot.run/STATE/1.1 Message ID = 49845
+0: D [2018-03-11 01:39:54.170] SetupProfileFolder: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage
+0: L [2018-03-11 01:39:54.170] ====================== BOT LOG ======================
+0: D [2018-03-11 01:39:54.177] Created attack log file: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\SwitchAccLog-2018-03.log
+0: D [2018-03-11 01:39:54.178] readConfig(), call number 1
+0: D [2018-03-11 01:39:54.188] Read Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\building.ini
+0: D [2018-03-11 01:39:54.200] Read Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\config.ini
+0: D [2018-03-11 01:39:54.339] Bot title updated to: My Bot v7.4.4 - Persian MOD v2.4.4 -
+0: D [2018-03-11 01:39:54.343] Aquired mutex ticket: Launching.1, 0x00000214
+0: L [2018-03-11 01:39:54.362] Watchdog launched
+0: D [2018-03-11 01:40:00.281] SplashStep 1 of 10: Initializing Android...(5.93 sec)
+0: D [2018-03-11 01:40:00.283] SplashStep 2 of 10: Detecting Android...(5.93 sec)
+0: D [2018-03-11 01:40:00.284] Retrieving CoC distributors
+0: L [2018-03-11 01:40:00.285] Unrecognized COC Package: 0
+0: D [2018-03-11 01:40:00.286] Bot title updated to: My Bot v7.4.4 - Persian MOD v2.4.4 - (nox)
+0: D [2018-03-11 01:40:00.287] UpdateSplashTitle: My Bot v7.4.4 - Persian MOD v2.4.4 - (nox), Profile: MyVillage
+0: D [2018-03-11 01:40:00.291] Aquire Mutex for Profile: MyVillage
+0: D [2018-03-11 01:40:00.291] My Bot is the only running instance
+0: D [2018-03-11 01:40:00.292] SplashStep 3 of 10: Loading Main GUI...(5.94 sec)
+0: D [2018-03-11 01:40:00.306] SplashStep 4 of 10: Loading GUI Bottom...(5.96 sec)
+0: D [2018-03-11 01:40:00.324] AndroidToFront: Source chkBackground
+0: D [2018-03-11 01:40:00.353] SplashStep 5 of 10: Loading Log tab...(6.01 sec)
+0: D [2018-03-11 01:40:00.619] SplashStep 6 of 10: Loading Village tab...(6.27 sec)
+0: D [2018-03-11 01:40:01.605] SplashStep 7 of 10: Loading Attack tab...(7.25 sec)
+0: D [2018-03-11 01:40:03.462] SplashStep 8 of 10: Loading Bot tab...(9.11 sec)
+0: D [2018-03-11 01:40:04.062] SplashStep 9 of 10: Loading Mods tab...(9.7 sec)
+0: D [2018-03-11 01:40:04.820] Profiles found: MyVillage
+0: D [2018-03-11 01:40:05.068] Profiles found: MyVillage
+0: D [2018-03-11 01:40:05.221] SplashStep 10 of 10: Loading About Us tab...(10.87 sec)
+0: D [2018-03-11 01:40:05.226] SplashStep 11 of 10: Initializing GUI...(10.87 sec)
+0: D [2018-03-11 01:40:05.318] Redraw MyBot ControlIds (forced): 0x00021C8A, 0x00021C80
+0: D [2018-03-11 01:40:05.319] Control ID 0x00021C8A handle: 0x00021C8A parent: 0x00021C88 $g_hFrmBot: 0x0005071E $g_hFrmBotEx: 0x00031D14 Pos: 10, 133, 452, 303
+0: D [2018-03-11 01:40:05.319] Control ID 0x00021C8A RedrawWindow Pos: 10, 133, 462, 436
+0: D [2018-03-11 01:40:05.320] Control ID 0x00021C80 handle: 0x00021C80 parent: 0x00021C88 $g_hFrmBot: 0x0005071E $g_hFrmBotEx: 0x00031D14 Pos: 10, 440, 452, 101
+0: D [2018-03-11 01:40:05.320] Control ID 0x00021C80 RedrawWindow Pos: 10, 440, 462, 541
+0: D [2018-03-11 01:40:05.321] $g_hFrmBot=0x0005071E
+0: D [2018-03-11 01:40:05.321] $g_hFrmBotEx=0x00031D14
+0: D [2018-03-11 01:40:05.321] $g_hFrmBotBottom=0x00021CFE
+0: D [2018-03-11 01:40:05.322] $g_hFrmBotEmbeddedShield=0
+0: D [2018-03-11 01:40:05.322] $g_hFrmBotEmbeddedShieldInput=19
+0: D [2018-03-11 01:40:05.323] $g_hFrmBotEmbeddedGraphics=0
+0: D [2018-03-11 01:40:05.325] Created attack log file: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\Logs\AttackLog-2018-03.log
+0: D [2018-03-11 01:40:05.328] readConfig(), call number 2
+0: D [2018-03-11 01:40:05.337] Read Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\building.ini
+0: D [2018-03-11 01:40:05.350] Read Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\config.ini
+0: D [2018-03-11 01:40:05.482] applyConfig(), call number 1
+0: D [2018-03-11 01:40:05.482] Threading: Using 0 threads for parallelism
+0: D [2018-03-11 01:40:05.483] Threading: Using 0 threads shared across all bot instances
+0: D [2018-03-11 01:40:05.484] Disable MyBot Window Redraw: applyConfig
+0: D [2018-03-11 01:40:05.485] Bot title updated to: My Bot v7.4.4 - Persian MOD v2.4.4 - (nox)
+0: D [2018-03-11 01:40:05.813] Redraw MyBot Window: applyConfig
+0: D [2018-03-11 01:40:05.816] $g_sProfilePath = C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles
+0: D [2018-03-11 01:40:05.817] $g_sProfileCurrentName = MyVillage
+0: D [2018-03-11 01:40:05.817] $g_sProfileLogsPath = C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\Logs\
+2: D [2018-03-11 01:40:05.851] MyBot.run.dll opened.
+2: D [2018-03-11 01:40:05.851] Threading: Using 0 threads shared across all bot instances
+2: D [2018-03-11 01:40:05.988] Threading: Using 0 threads for parallelism
+2: D [2018-03-11 01:40:05.988] Searching Nox Window: Title = 'No', Class = '[CLASS:subWin; INSTANCE:1]', Text = ''
+2: D [2018-03-11 01:40:05.989] Nox (nox) Window not found in list
+2: D [2018-03-11 01:40:05.989] Android Emulator not launched
+2: D [2018-03-11 01:40:05.993] setAndroidPID: $pid=0
+2: D [2018-03-11 01:40:06.011] Android PID=0 initialized: , Idle
+2: D [2018-03-11 01:40:06.011] debugMBRFunctions: $iDebugSearchArea=0, $iDebugRedArea=0, $giDebugOcr=0
+2: D [2018-03-11 01:40:06.515] SetBotGuiPID: $pid=8764
+2: D [2018-03-11 01:40:06.520] Bot GUI PID=8764 initialized: 8764
+2: L [2018-03-11 01:40:06.522] Android Emulator Configuration: Nox (instance nox)
+2: L [2018-03-11 01:40:06.786]  
+2: L [2018-03-11 01:40:06.787] ___________ Persian MOD___________
+2: L [2018-03-11 01:40:06.788]                                  » Warning «
+2: L [2018-03-11 01:40:06.789]          » Please Set The Bot Language To ENGLISH «
+2: L [2018-03-11 01:40:06.789]            » Make a Fresh Configuration, Don't Use Old Profile «
+2: L [2018-03-11 01:40:06.790] -----------------------------------------------------------------------
+2: L [2018-03-11 01:40:06.791]      » Developer: Mohammad Hasan Kargar (@MHK2012) «
+2: L [2018-03-11 01:40:06.791]      » Thanks To NguyenAnhHD, Demen And Eloy «
+2: L [2018-03-11 01:40:06.792]          » Thanks To Parsa And Reza Haghighat «
+2: L [2018-03-11 01:40:06.793] -----------------------------------------------------------------------
+2: L [2018-03-11 01:40:06.794]                       » Based On: MyBot v7.4.4 «
+2: L [2018-03-11 01:40:06.795]                          » Persian MOD v2.4.4 «
+2: L [2018-03-11 01:40:06.795] -----------------------------------------------------------------------
+2: L [2018-03-11 01:40:06.796]  
+2: L [2018-03-11 01:40:07.306] WELCOME CHIEF, YOU HAVE THE LATEST VERSION OF THE BOT
+2: L [2018-03-11 01:40:07.340]  
+2: L [2018-03-11 01:40:07.341] Works with December 2017 Update!
+2: L [2018-03-11 01:40:07.342] Plus new features and fixes
+2: L [2018-03-11 01:40:07.345] For more information, go to 
+2: L [2018-03-11 01:40:07.346] https://mybot.run
+2: L [2018-03-11 01:40:07.347]  Always free and open source.
+2: D [2018-03-11 01:40:07.348] Maximum of 2 bots running at same time configured
+2: D [2018-03-11 01:40:07.348] MyBot.run launch time 12636 ms.
+2: D [2018-03-11 01:40:09.550] New Bot Host Window Handle registered: 0x00031D16
+2: D [2018-03-11 01:40:17.754] Maximum of 2 bots running at same time changed to 6
+2: D [2018-03-11 01:40:19.832] Threading: Using 0 threads shared across all bot instances changed to 1
+2: D [2018-03-11 01:40:21.796] Threading: Using 0 threads for parallelism changedd to 1
+2: D [2018-03-11 01:40:21.797] Threading: Using 1 threads for parallelism
+2: D [2018-03-11 01:40:24.636] Maximum of 6 bots running at same time changed to 8
+2: D [2018-03-11 01:40:24.745] 1 running bot instances detected
+2: D [2018-03-11 01:41:04.294] Disable MyBot Window Redraw: SetComboTroopComp
+2: D [2018-03-11 01:41:04.300] Redraw MyBot Window: SetComboTroopComp
+2: D [2018-03-11 01:41:17.682] Disable MyBot Window Redraw: SetComboTroopComp
+2: D [2018-03-11 01:41:17.688] Redraw MyBot Window: SetComboTroopComp
+2: D [2018-03-11 01:41:18.812] Disable MyBot Window Redraw: TotalSpellCountClick
+2: D [2018-03-11 01:41:18.814] Redraw MyBot Window: TotalSpellCountClick
+2: D [2018-03-11 01:41:18.964] Disable MyBot Window Redraw: TotalSpellCountClick
+2: D [2018-03-11 01:41:18.966] Redraw MyBot Window: TotalSpellCountClick
+2: D [2018-03-11 01:44:14.114] saveConfig(), call number 1
+2: D [2018-03-11 01:44:14.132] Save Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\building.ini
+2: D [2018-03-11 01:44:14.154] Save Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\MyVillage\config.ini
+2: L [2018-03-11 01:44:14.156] Nox (nox) unsupported Graphics Engine / Render Mode, using OpenGL/ADB screencap
+2: D [2018-03-11 01:44:14.157] Enable ADB screencap for Background Mode
+2: D [2018-03-11 01:44:14.401] SaveConfig(), time = 0.3 sec
+2: D [2018-03-11 01:44:14.564] SetupProfileFolder: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11
+2: L [2018-03-11 01:44:14.567] New Profile 'th11' created
+2: D [2018-03-11 01:44:14.569] Profiles found: MyVillage|th11
+2: D [2018-03-11 01:44:21.946] saveConfig(), call number 2
+2: D [2018-03-11 01:44:21.958] Save Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\building.ini
+2: D [2018-03-11 01:44:21.976] Save Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th11\config.ini
+2: L [2018-03-11 01:44:21.978] Nox (nox) unsupported Graphics Engine / Render Mode, using OpenGL/ADB screencap
+2: D [2018-03-11 01:44:21.979] Enable ADB screencap for Background Mode
+2: D [2018-03-11 01:44:22.204] SaveConfig(), time = 0.27 sec
+2: D [2018-03-11 01:44:22.374] SetupProfileFolder: C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th10
+2: L [2018-03-11 01:44:22.376] New Profile 'th10' created
+2: D [2018-03-11 01:44:22.377] Profiles found: MyVillage|th10|th11
+2: D [2018-03-11 01:44:40.743] Disable MyBot Window Redraw: SetComboTroopComp
+2: D [2018-03-11 01:44:40.751] Redraw MyBot Window: SetComboTroopComp
+2: D [2018-03-11 01:44:51.349] saveConfig(), call number 3
+2: D [2018-03-11 01:44:51.362] Save Building Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th10\building.ini
+2: D [2018-03-11 01:44:51.380] Save Config C:\Users\Caine\Desktop\GitHub Bots\KnowsKones\Profiles\th10\config.ini
+2: L [2018-03-11 01:44:51.382] Nox (nox) unsupported Graphics Engine / Render Mode, using OpenGL/ADB screencap
+2: D [2018-03-11 01:44:51.383] Enable ADB screencap for Background Mode
+2: D [2018-03-11 01:44:51.598] SaveConfig(), time = 0.25 sec
+2: D [2018-03-11 01:44:51.764] Aquire Mutex for Profile: th11
