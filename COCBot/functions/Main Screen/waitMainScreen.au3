@@ -49,6 +49,7 @@ Func waitMainScreen() ;Waits for main screen to popup
 		If ($i > 105) Or ($iCount > 120) Then
 			PushSharedPrefs()
 			ExitLoop ; If CheckObstacles forces reset, limit total time to 4 minutes
+	    EndIf
 		If TestCapture() Then
 			Return "Main screen not available"
 		EndIf
