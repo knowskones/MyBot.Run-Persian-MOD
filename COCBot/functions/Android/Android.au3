@@ -928,7 +928,10 @@ Func OpenAndroid($bRestart = False, $bStartOnlyAndroid = False, $wasRunState = $
 	If $OpenAndroidActive >= $g_iOpenAndroidActiveMaxTry Then
 		SetLog("Cannot open " & $g_sAndroidEmulator & ", tried " & $OpenAndroidActive & " times...", $COLOR_ERROR)
 		btnStop()
-		Return FuncReturn(False)
+		SetLog("Stopping bot for 18 minutes to resolve adb error before restarting")
+		_Sleep(1080000)
+		$OpenAndroidActive = 0
+		btnStart()
 	EndIf
 	$OpenAndroidActive += 1
 	If $OpenAndroidActive > 1 Then
