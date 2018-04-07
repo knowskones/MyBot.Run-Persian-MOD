@@ -798,7 +798,9 @@ Global $g_bChkDonate = True
 Global Enum $eCustomA = $eTroopCount, $eCustomB = $eTroopCount + 1
 ; Additional Custom Donate - Persian MOD (#-28)
 Global Enum $eCustomC = $eTroopCount + 2, $eCustomD = $eTroopCount + 3
-Global Const $g_iCustomDonateConfigs = 4
+Global Enum $eCustomE = $eTroopCount + 4, $eCustomF = $eTroopCount + 5
+Global Enum $eCustomG = $eTroopCount + 6, $eCustomH = $eTroopCount + 7
+Global Const $g_iCustomDonateConfigs = 8
 Global $g_abChkDonateTroop[$eTroopCount + $g_iCustomDonateConfigs] = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 Global $g_abChkDonateAllTroop[$eTroopCount + $g_iCustomDonateConfigs] = [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 Global $g_asTxtDonateTroop[$eTroopCount + $g_iCustomDonateConfigs] = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""] ; array of pipe-delimited list of strings to match to a request string
@@ -812,6 +814,8 @@ Global $g_asTxtBlacklistSpell[$eSpellCount] = ["", "", "", "", "", "", "", "", "
 Global $g_aiDonateCustomTrpNumA[3][2] = [[0, 0], [0, 0], [0, 0]], $g_aiDonateCustomTrpNumB[3][2] = [[0, 0], [0, 0], [0, 0]]
 ; Additional Custom Donate - Persian MOD (#-28)
 Global $g_aiDonateCustomTrpNumC[3][2] = [[0, 0], [0, 0], [0, 0]], $g_aiDonateCustomTrpNumD[3][2] = [[0, 0], [0, 0], [0, 0]]
+Global $g_aiDonateCustomTrpNumE[3][2] = [[0, 0], [0, 0], [0, 0]], $g_aiDonateCustomTrpNumF[3][2] = [[0, 0], [0, 0], [0, 0]]
+Global $g_aiDonateCustomTrpNumG[3][2] = [[0, 0], [0, 0], [0, 0]], $g_aiDonateCustomTrpNumH[3][2] = [[0, 0], [0, 0], [0, 0]]
 
 Global $g_bChkExtraAlphabets = False ; extra alphabets
 Global $g_bChkExtraChinese = False ; extra Chinese alphabets

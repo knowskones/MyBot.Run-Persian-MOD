@@ -730,12 +730,10 @@ Func KillBSProcess()
 		If $aBS_FileNames[$iIndex][1] > 0 Then ; If it is running, then kill it
 			ShellExecute(@WindowsDir & "\System32\taskkill.exe", " -t -pid " & $aBS_FileNames[$iIndex][1], "", Default, @SW_HIDE)
 			If _Sleep(1000) Then Return ; Give OS time to work
-		EndIf
-		If ProcessExists($aBS_FileNames[$iIndex][1]) Then ; If it is still running, then force kill it
-			If $g_bDebugAndroid Then SetDebugLog($aBS_FileNames[$iIndex][0] & " 1st Kill failed, trying again", $COLOR_DEBUG)
-			ShellExecute(@WindowsDir & "\System32\taskkill.exe", "-f -t -pid " & $aBS_FileNames[$iIndex][1], "", Default, @SW_HIDE)
-			If _Sleep(500) Then Return ; Give OS time to work
-		EndIf
+	    EndIf
+		 If $g_bDebugAndroid Then SetDebugLog($aBS_FileNames[$iIndex][0] & " 1st Kill failed, trying again", $COLOR_DEBUG)
+		 ShellExecute(@WindowsDir & "\System32\taskkill.exe", "-f -t HD-* ", "", Default, @SW_HIDE)
+		 If _Sleep(500) Then Return ; Give OS time to work
 	Next
 
 EndFunc   ;==>KillBSProcess

@@ -47,6 +47,10 @@ Global $g_ahCmbDonateCustomB[3] = [0, 0, 0], $g_ahTxtDonateCustomB[3] = [0, 0, 0
 ; Additional Custom Donate - Persian MOD (#-28)
 Global $g_ahCmbDonateCustomC[3] = [0, 0, 0], $g_ahTxtDonateCustomC[3] = [0, 0, 0], $g_ahPicDonateCustomC[3] = [0, 0, 0]
 Global $g_ahCmbDonateCustomD[3] = [0, 0, 0], $g_ahTxtDonateCustomD[3] = [0, 0, 0], $g_ahPicDonateCustomD[3] = [0, 0, 0]
+Global $g_ahCmbDonateCustomE[3] = [0, 0, 0], $g_ahTxtDonateCustomE[3] = [0, 0, 0], $g_ahPicDonateCustomE[3] = [0, 0, 0]
+Global $g_ahCmbDonateCustomF[3] = [0, 0, 0], $g_ahTxtDonateCustomF[3] = [0, 0, 0], $g_ahPicDonateCustomF[3] = [0, 0, 0]
+Global $g_ahCmbDonateCustomG[3] = [0, 0, 0], $g_ahTxtDonateCustomG[3] = [0, 0, 0], $g_ahPicDonateCustomG[3] = [0, 0, 0]
+Global $g_ahCmbDonateCustomH[3] = [0, 0, 0], $g_ahTxtDonateCustomH[3] = [0, 0, 0], $g_ahPicDonateCustomH[3] = [0, 0, 0]
 
 Global $g_hLblDonateTroopTBD1 = 0, $g_hLblDonateTroopTBD2 = 0, $g_hLblDonateTroopTBD3 = 0, _
 	   $g_hLblDonateTroopCustomC = 0, $g_hLblDonateTroopCustomD = 0, $g_hLblDonateTroopCustomF = 0, $g_hLblDonateTroopCustomG = 0, $g_hLblDonateTroopCustomH = 0, _
@@ -490,6 +494,10 @@ Func CreateDonateSubTab()
 	; Additional Custom Donate - Persian MOD (#-28)
 	Local $sDonateTxtCustomC = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
 	Local $sDonateTxtCustomD = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
+	Local $sDonateTxtCustomE = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
+	Local $sDonateTxtCustomF = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
+	Local $sDonateTxtCustomG = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
+	Local $sDonateTxtCustomH = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "DonateTxtCustom", -1)
 
 	Local $sTxtNothing = GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtNothing", "Nothing")
 
@@ -789,38 +797,6 @@ Func CreateDonateSubTab()
 
 	$x = $xStart - 18
 	$y += 40
-		GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-;~			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnDonBlacklist, 1)
-;~			GUICtrlSetOnEvent(-1, "btnDonateBlacklist")
-	$x += $Offx
-		; Button Not Active - future expansion?
-		$g_hLblDonateTroopCustomF = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
-			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-		GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-;~			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnTroops, 0)
-;~			GUICtrlSetOnEvent(-1, "btnDonateCustomF")
-	$x += $Offx
-		; Button Not Active - future expansion?
-		$g_hLblDonateTroopCustomG = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
-			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-		GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-;~			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnDonCustom, 1)
-;~			GUICtrlSetOnEvent(-1, "btnDonateCustomG")
-	$x += $Offx
-		; Button Not Active - future expansion?
-		$g_hLblDonateTroopCustomH = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
-			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-		GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-;~			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
-;~			GUICtrlSetOnEvent(-1, "btnDonateCustomH")
-	$x += $Offx
 		;;; Custom Combination Donate #1 by ChiefM3, edit my MonkeyHunter
 		$g_ahLblDonateTroop[$eCustomA] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
 			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
@@ -836,8 +812,6 @@ Func CreateDonateSubTab()
 		$g_ahBtnDonateTroop[$eCustomB] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
 			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
 			GUICtrlSetOnEvent(-1, "btnDonateTroop")
-
-	$x += 4
 	$x += $Offx
 		;;; Custom Combination Donate #3 ~ Additional Custom Donate by NguyenAnhHD
 		$g_ahLblDonateTroop[$eCustomC] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
@@ -846,28 +820,49 @@ Func CreateDonateSubTab()
 		$g_ahBtnDonateTroop[$eCustomC] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
 			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustom, 1)
 			GUICtrlSetOnEvent(-1, "btnDonateTroop")
-
 	$x += $Offx
-		;;; Custom Combination Donate #4 ~ ; Additional Custom Donate by NguyenAnhHD
+		;;; Custom Combination Donate #4 added by NguyenAnhHD
 		$g_ahLblDonateTroop[$eCustomD] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
 			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
 			GUICtrlSetState(-1, $GUI_DISABLE)
 		$g_ahBtnDonateTroop[$eCustomD] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
+			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
 			GUICtrlSetOnEvent(-1, "btnDonateTroop")
-
 	$x += $Offx
-		; Button Not Active - future expansion?
-		$g_hLblDonateTroopCustomC = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
+		;;; Custom Combination Donate #5 ~ Additional Custom Donate by KnowsKones
+		$g_ahLblDonateTroop[$eCustomE] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
 			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
 			GUICtrlSetState(-1, $GUI_DISABLE)
-
-		GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
-			GUICtrlSetState(-1, $GUI_DISABLE)
-;~			_GUICtrlSetImage(-1, $g_sLibIconPath, $eIcnTroops, 0)
-;~			GUICtrlSetOnEvent(-1, "btnDonateCustomC")
-
+		$g_ahBtnDonateTroop[$eCustomE] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
+			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustom, 1)
+			GUICtrlSetOnEvent(-1, "btnDonateTroop")
 	$x += $Offx
+		;;; Custom Combination Donate #6 ~ ; Additional Custom Donate by KnowsKones
+		$g_ahLblDonateTroop[$eCustomF] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
+			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
+			GUICtrlSetState(-1, $GUI_DISABLE)
+		$g_ahBtnDonateTroop[$eCustomF] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
+			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
+			GUICtrlSetOnEvent(-1, "btnDonateTroop")
+	$x += 4
+	$x += $Offx
+		;;; Custom Combination Donate #7 ~ Additional Custom Donate by KnowsKones
+		$g_ahLblDonateTroop[$eCustomG] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
+			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
+			GUICtrlSetState(-1, $GUI_DISABLE)
+		$g_ahBtnDonateTroop[$eCustomG] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
+			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustom, 1)
+			GUICtrlSetOnEvent(-1, "btnDonateTroop")
+	$x += $Offx
+		;;; Custom Combination Donate #8 ~ ; Additional Custom Donate by KnowsKones
+		$g_ahLblDonateTroop[$eCustomH] = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
+			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
+			GUICtrlSetState(-1, $GUI_DISABLE)
+		$g_ahBtnDonateTroop[$eCustomH] = GUICtrlCreateButton("", $x + 2, $y, $Offx - 2, $Offx - 2, $BS_ICON)
+			_GUICtrlSetImage (-1, $g_sLibIconPath, $eIcnDonCustomB, 1)
+			GUICtrlSetOnEvent(-1, "btnDonateTroop")
+		; Button Not Active - future expansion?
+	$x += $Offx ;;; #9
 		; Button Not Active - future expansion?
 		$g_hLblDonateTroopCustomD = GUICtrlCreateLabel("", $x, $y - 2, $Offx + 2, $Offx + 2)
 			GUICtrlSetBkColor(-1, $GUI_BKCOLOR_TRANSPARENT)
@@ -2060,6 +2055,282 @@ Func CreateDonateSubTab()
 			GUICtrlSetColor(-1, $COLOR_WHITE)
 			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtBlacklistTroop_Item_30", -1)))
 			_GUICtrlSetTip(-1, $sTxtKeywordsNoTip & " " & $sDonateTxtCustomD)
+	GUICtrlCreateGroup("", -99, -99, 1, 1)
+	$x = $xStart
+	$y = $Offy
+	;;; Additional Custom Donate #5 ~ Additional Custom Donate by KnowsKones
+	$g_ahGrpDonateTroop[$eCustomE] = GUICtrlCreateGroup($sDonateTxtCustomE, $x - 20, $y - 20, $g_iSizeWGrpTab3, 169)
+	$x -= 10
+	$y -= 2
+		GUICtrlSetState(-1, $GUI_HIDE)
+		_GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonCustomB, $x + 215, $y, 64, 64, $BS_ICON)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahChkDonateTroop[$eCustomE] = GUICtrlCreateCheckbox($sTxtDonate & " " & $sDonateTxtCustomE, $x + 285, $y + 10, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomE & " " & $sTxtDonateTipTroop)
+			GUICtrlSetOnEvent(-1, "chkDonateTroop")
+		$g_ahChkDonateAllTroop[$eCustomE] = GUICtrlCreateCheckbox($sTxtDonateAll, $x + 285, $y + 30, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomE & $sTxtDonateTipAll & @CRLF & $sTxtIgnoreAll)
+			GUICtrlSetOnEvent(-1, "chkDonateAllTroop")
+		GUICtrlCreateLabel($sTxtKeywords & " " & $sDonateTxtCustomE & ":", $x - 5, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateTroop[$eCustomE] = GUICtrlCreateEdit("", $x - 5, $y + 95, 205, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtDonateTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywords & " " & $sDonateTxtCustomE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_01", -1) & ":", $x, $y + 4, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomE[0] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBabyDragon, $x + 25, $y, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomE[0] = GUICtrlCreateCombo("", $x + 60, $y, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBabyDragons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomE")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomE[0] = GUICtrlCreateInput("1", $x + 165, $y, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_02", -1) & ":", $x, $y + 29, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomE[1] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBalloon, $x + 25, $y + 25, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomE[1] = GUICtrlCreateCombo("", $x + 60, $y + 25, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBalloons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomE")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomE[1] = GUICtrlCreateInput("3", $x + 165, $y + 25, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_03", -1) & ":", $x, $y + 54, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomE[2] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonMinion, $x + 25, $y + 50, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomE[2] = GUICtrlCreateCombo("", $x + 60, $y + 50, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtMinions)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomE")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomE[2] = GUICtrlCreateInput("5", $x + 165, $y + 50, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel($sTxtKeywordsNo & ":", $x + 215, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtBlacklistTroop[$eCustomE] = GUICtrlCreateEdit("", $x + 215, $y + 95, 200, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetBkColor(-1, 0x505050)
+			GUICtrlSetColor(-1, $COLOR_WHITE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtBlacklistTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywordsNoTip & " " & $sDonateTxtCustomE)
+	GUICtrlCreateGroup("", -99, -99, 1, 1)
+	$x = $xStart
+	$y = $Offy
+	;;; Additional Custom Donate #6 ~ Additional Custom Donate by KnowsKones
+	$g_ahGrpDonateTroop[$eCustomF] = GUICtrlCreateGroup($sDonateTxtCustomF, $x - 20, $y - 20, $g_iSizeWGrpTab3, 169)
+	$x -= 10
+	$y -= 2
+		GUICtrlSetState(-1, $GUI_HIDE)
+		_GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonCustomB, $x + 215, $y, 64, 64, $BS_ICON)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahChkDonateTroop[$eCustomF] = GUICtrlCreateCheckbox($sTxtDonate & " " & $sDonateTxtCustomF, $x + 285, $y + 10, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomF & " " & $sTxtDonateTipTroop)
+			GUICtrlSetOnEvent(-1, "chkDonateTroop")
+		$g_ahChkDonateAllTroop[$eCustomF] = GUICtrlCreateCheckbox($sTxtDonateAll, $x + 285, $y + 30, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomF & $sTxtDonateTipAll & @CRLF & $sTxtIgnoreAll)
+			GUICtrlSetOnEvent(-1, "chkDonateAllTroop")
+		GUICtrlCreateLabel($sTxtKeywords & " " & $sDonateTxtCustomF & ":", $x - 5, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateTroop[$eCustomF] = GUICtrlCreateEdit("", $x - 5, $y + 95, 205, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtDonateTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywords & " " & $sDonateTxtCustomF)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_01", -1) & ":", $x, $y + 4, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomF[0] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBabyDragon, $x + 25, $y, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomF[0] = GUICtrlCreateCombo("", $x + 60, $y, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBabyDragons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomF")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomF[0] = GUICtrlCreateInput("1", $x + 165, $y, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_02", -1) & ":", $x, $y + 29, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomF[1] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBalloon, $x + 25, $y + 25, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomF[1] = GUICtrlCreateCombo("", $x + 60, $y + 25, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBalloons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomF")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomF[1] = GUICtrlCreateInput("3", $x + 165, $y + 25, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_03", -1) & ":", $x, $y + 54, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomF[2] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonMinion, $x + 25, $y + 50, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomF[2] = GUICtrlCreateCombo("", $x + 60, $y + 50, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtMinions)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomF")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomF[2] = GUICtrlCreateInput("5", $x + 165, $y + 50, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel($sTxtKeywordsNo & ":", $x + 215, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtBlacklistTroop[$eCustomF] = GUICtrlCreateEdit("", $x + 215, $y + 95, 200, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetBkColor(-1, 0x505050)
+			GUICtrlSetColor(-1, $COLOR_WHITE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtBlacklistTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywordsNoTip & " " & $sDonateTxtCustomF)
+	GUICtrlCreateGroup("", -99, -99, 1, 1)
+	$x = $xStart
+	$y = $Offy
+	;;; Additional Custom Donate #7 ~ Additional Custom Donate by KnowsKones
+	$g_ahGrpDonateTroop[$eCustomG] = GUICtrlCreateGroup($sDonateTxtCustomG, $x - 20, $y - 20, $g_iSizeWGrpTab3, 169)
+	$x -= 10
+	$y -= 2
+		GUICtrlSetState(-1, $GUI_HIDE)
+		_GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonCustomB, $x + 215, $y, 64, 64, $BS_ICON)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahChkDonateTroop[$eCustomG] = GUICtrlCreateCheckbox($sTxtDonate & " " & $sDonateTxtCustomG, $x + 285, $y + 10, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomG & " " & $sTxtDonateTipTroop)
+			GUICtrlSetOnEvent(-1, "chkDonateTroop")
+		$g_ahChkDonateAllTroop[$eCustomG] = GUICtrlCreateCheckbox($sTxtDonateAll, $x + 285, $y + 30, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomG & $sTxtDonateTipAll & @CRLF & $sTxtIgnoreAll)
+			GUICtrlSetOnEvent(-1, "chkDonateAllTroop")
+		GUICtrlCreateLabel($sTxtKeywords & " " & $sDonateTxtCustomG & ":", $x - 5, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateTroop[$eCustomG] = GUICtrlCreateEdit("", $x - 5, $y + 95, 205, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtDonateTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywords & " " & $sDonateTxtCustomG)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_01", -1) & ":", $x, $y + 4, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomG[0] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBabyDragon, $x + 25, $y, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomG[0] = GUICtrlCreateCombo("", $x + 60, $y, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBabyDragons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomG")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomG[0] = GUICtrlCreateInput("1", $x + 165, $y, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_02", -1) & ":", $x, $y + 29, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomG[1] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBalloon, $x + 25, $y + 25, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomG[1] = GUICtrlCreateCombo("", $x + 60, $y + 25, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBalloons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomG")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomG[1] = GUICtrlCreateInput("3", $x + 165, $y + 25, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_03", -1) & ":", $x, $y + 54, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomG[2] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonMinion, $x + 25, $y + 50, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomG[2] = GUICtrlCreateCombo("", $x + 60, $y + 50, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtMinions)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomG")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomG[2] = GUICtrlCreateInput("5", $x + 165, $y + 50, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel($sTxtKeywordsNo & ":", $x + 215, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtBlacklistTroop[$eCustomG] = GUICtrlCreateEdit("", $x + 215, $y + 95, 200, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetBkColor(-1, 0x505050)
+			GUICtrlSetColor(-1, $COLOR_WHITE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtBlacklistTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywordsNoTip & " " & $sDonateTxtCustomG)
+	GUICtrlCreateGroup("", -99, -99, 1, 1)
+	$x = $xStart
+	$y = $Offy
+  	;;; Additional Custom Donate #8 ~ Additional Custom Donate by KnowsKones
+	$g_ahGrpDonateTroop[$eCustomH] = GUICtrlCreateGroup($sDonateTxtCustomH, $x - 20, $y - 20, $g_iSizeWGrpTab3, 169)
+	$x -= 10
+	$y -= 2
+		GUICtrlSetState(-1, $GUI_HIDE)
+		_GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonCustomB, $x + 215, $y, 64, 64, $BS_ICON)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahChkDonateTroop[$eCustomH] = GUICtrlCreateCheckbox($sTxtDonate & " " & $sDonateTxtCustomH, $x + 285, $y + 10, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomH & " " & $sTxtDonateTipTroop)
+			GUICtrlSetOnEvent(-1, "chkDonateTroop")
+		$g_ahChkDonateAllTroop[$eCustomH] = GUICtrlCreateCheckbox($sTxtDonateAll, $x + 285, $y + 30, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+			_GUICtrlSetTip(-1, $sTxtDonateTip & " " & $sDonateTxtCustomH & $sTxtDonateTipAll & @CRLF & $sTxtIgnoreAll)
+			GUICtrlSetOnEvent(-1, "chkDonateAllTroop")
+		GUICtrlCreateLabel($sTxtKeywords & " " & $sDonateTxtCustomH & ":", $x - 5, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateTroop[$eCustomH] = GUICtrlCreateEdit("", $x - 5, $y + 95, 205, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtDonateTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywords & " " & $sDonateTxtCustomH)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_01", -1) & ":", $x, $y + 4, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomH[0] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBabyDragon, $x + 25, $y, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomH[0] = GUICtrlCreateCombo("", $x + 60, $y, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBabyDragons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomH")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomH[0] = GUICtrlCreateInput("1", $x + 165, $y, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_02", -1) & ":", $x, $y + 29, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomH[1] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonBalloon, $x + 25, $y + 25, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomH[1] = GUICtrlCreateCombo("", $x + 60, $y + 25, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtBalloons)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomH")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomH[1] = GUICtrlCreateInput("3", $x + 165, $y + 25, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "LblDonateCustom_03", -1) & ":", $x, $y + 54, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahPicDonateCustomH[2] = _GUICtrlCreateIcon($g_sLibIconPath, $eIcnDonMinion, $x + 25, $y + 50, 24, 24)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahCmbDonateCustomH[2] = GUICtrlCreateCombo("", $x + 60, $y + 50, 95, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
+			GUICtrlSetData(-1, $sTxtBarbarians & "|" & $sTxtArchers & "|" & $sTxtGiants & "|" & $sTxtGoblins & "|" & $sTxtWallBreakers & "|" & $sTxtBalloons & "|" & $sTxtWizards & "|" & $sTxtHealers & "|" & $sTxtDragons & "|" & $sTxtPekkas & "|" & $sTxtBabyDragons & "|" & $sTxtMiners & "|" & $sTxtMinions & "|" & $sTxtHogRiders & "|" & $sTxtValkyries & "|" & $sTxtGolems & "|" & $sTxtWitches & "|" & $sTxtLavaHounds & "|" & $sTxtBowlers & "|" & $sTxtNothing, $sTxtMinions)
+			GUICtrlSetOnEvent(-1, "cmbDonateCustomH")
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtDonateCustomH[2] = GUICtrlCreateInput("5", $x + 165, $y + 50, 30, 21, BitOR($GUI_SS_DEFAULT_INPUT, $ES_CENTER, $ES_NUMBER))
+			GUICtrlSetLimit(-1, 1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+
+		GUICtrlCreateLabel($sTxtKeywordsNo & ":", $x + 215, $y + 80, -1, -1)
+			GUICtrlSetState(-1, $GUI_HIDE)
+		$g_ahTxtBlacklistTroop[$eCustomH] = GUICtrlCreateEdit("", $x + 215, $y + 95, 200, 50, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
+			GUICtrlSetState(-1, $GUI_HIDE)
+			GUICtrlSetBkColor(-1, 0x505050)
+			GUICtrlSetColor(-1, $COLOR_WHITE)
+			GUICtrlSetData(-1, StringFormat(GetTranslatedFileIni("MBR GUI Design Child Village - Donate", "TxtBlacklistTroop_Item_30", -1)))
+			_GUICtrlSetTip(-1, $sTxtKeywordsNoTip & " " & $sDonateTxtCustomH)
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 
 	$x = $xStart

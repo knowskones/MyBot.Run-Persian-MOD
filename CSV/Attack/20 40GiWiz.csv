@@ -24,16 +24,17 @@ DROP  |A-B-E-F    |1,3,5,7,9  |5          |Wiza       |20-30      |10-15      |5
 DROP  |C-D-G-H    |2,4,6,8    |4          |Wiza       |20-30      |10-15      |50-75     |           |
 DROP  |A-B-C-D-E-F-G-H        |1-10       |10         |Giant      |15-25      |10-20      |50-75     |             |
 DROP  |A-B-C-D-E-F-G-H        |1-10       |10         |Wiza       |15-25      |10-20      |50-75     |             |
+DROP  |A          |1          |1          |castle     |20-30      |10-20      |10-20     |           |
+DROP  |A          |1          |1          |king       |20-30      |10-20      |10-20     |           |
+DROP  |A          |1          |1          |queen      |20-30      |10-20      |10-20     |           |
+DROP  |A          |1          |1          |Warden     |20-30      |10-20      |10-20     |           |
 DROP  |A-C-E-G    |1,6,10     |3          |Giant      |20-30      |10-15      |50-75     |           | 
 DROP  |B-D-F-H    |1,6        |2          |Giant      |20-30      |10-15      |50-75     |           | 
 DROP  |A-B-E-F    |1,3,5,7,9  |5          |Wiza       |20-30      |10-15      |50-75     |           | 
 DROP  |C-D-G-H    |2,4,6,8    |4          |Wiza       |20-30      |10-15      |50-75     |           |
 DROP  |A-B-C-D-E-F-G-H        |1-10       |10         |Giant      |15-25      |10-20      |50-75     |             |
 DROP  |A-B-C-D-E-F-G-H        |1-10       |10         |Wiza       |15-25      |10-20      |50-75     |             |
-DROP  |A          |1          |1          |castle     |20-30      |10-20      |100-200    |           |
-DROP  |A          |1          |1          |king       |20-30      |10-20      |100-200    |           |
-DROP  |A          |1          |1          |queen      |20-30      |10-20      |100-200    |           |
-DROP  |A          |1          |1          |Warden     |20-30      |10-20      |100-200    |           |
+DROP  |A          |1          |1          |Warden     |20-30      |10-20      |10-20     |           |
 
 RECALC|           |           |           |           |           |           |           |           |Recalculate remaining troops and then launch...
 
