@@ -324,9 +324,6 @@ Func DonateCC($bCheckForNewMsg = False, $Train = True)
 							EndIf
 						Next
 					EndIf
-					$iBenchmark = TimerDiff($itime)
-					If $g_bDebugSetlog Then SetDebugLog("Get Donated troops in " & StringFormat("%.2f", $iBenchmark) & "'ms", $COLOR_DEBUG)
-					$itime = TimerInit()
 
 				EndIf
 
